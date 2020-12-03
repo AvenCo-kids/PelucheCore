@@ -7,6 +7,7 @@ namespace APC {
     enum class InputType {SomeInput, AnotherInput};
 
     class Peluche {
+        // Will need at least 2 threads to run peluche & server (so the API can ping us)
     public:
         Peluche() = default;
         ~Peluche() = default;
