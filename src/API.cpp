@@ -24,7 +24,7 @@ namespace APC
     void API::initCurl()
     {
         if (!_curl)
-            curl_easy_init();
+            _curl = curl_easy_init();
     }
 
     static size_t WriteCallback(void *contents, size_t size, size_t nmemb, void *userp)
