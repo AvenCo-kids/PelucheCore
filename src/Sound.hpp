@@ -24,6 +24,7 @@ namespace APC
         ~Sound() noexcept = default;
 
         bool setSound(const std::string &path, bool repeat = false);
+        bool isPlaying();
 
         void play();
         void stop();

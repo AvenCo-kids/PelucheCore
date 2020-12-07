@@ -42,4 +42,11 @@ namespace APC
         return false;
     }
 
+    bool Sound::isPlaying()
+    {
+        if (_mus.getStatus() == 0)
+            return false;
+        return true;
+    }
+
 } // namespace APC
