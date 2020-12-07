@@ -1,1 +1,1 @@
-# PelucheCore
+# PlushCore
