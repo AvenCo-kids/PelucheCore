@@ -3,10 +3,13 @@
 
 #include <map>
 #include <string>
+#include <utility>
 #include <vector>
 
-namespace APC {
-    class Coordinator {
+namespace APC
+{
+    class Coordinator
+    {
     private:
         using Node = struct node_s {
             char *_mp3path;
@@ -18,9 +21,9 @@ namespace APC {
         Coordinator() = default;
         ~Coordinator() = default;
 
-        bool getNewStory() noexcept;
-        void makeChoice() noexcept;
-        bool saveProgress() const noexcept;
+        bool getNewStory(void) noexcept;
+        void makeChoice(Node *chosen) noexcept;
+        bool saveProgress(int pageNumber) const noexcept;
     private:
         char *_storyName;
         Node *_storyHead;

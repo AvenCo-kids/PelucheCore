@@ -3,8 +3,10 @@
 
 #include "Coordinator.hpp"
 
-namespace APC {
-    class IAPI {
+namespace APC
+{
+    class IAPI
+    {
     public:
         // Fix all these prototypes
         virtual void getStory(const std::string name) = 0;

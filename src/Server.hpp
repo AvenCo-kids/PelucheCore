@@ -3,8 +3,9 @@
 
 #include "Coordinator.hpp"
 
-namespace APC {
-    class Server {
-        // Expose "/start" & "/stop"
+namespace APC
+{
+    class Server
+    { // Expose "/start" & "/stop"
     };
 }

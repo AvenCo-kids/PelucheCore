@@ -6,6 +6,7 @@
 */
 
 #include "API.hpp"
+
 namespace APC
 {
     API::API()
@@ -16,9 +17,7 @@ namespace APC
     API::~API()
     {
         if (_curl)
-        {
             curl_easy_cleanup(_curl);
-        }
     }
 
     void API::initCurl()
@@ -81,4 +80,4 @@ namespace APC
         url += skip;
         return getRequest(url);
     }
-} // namespace APC
+}

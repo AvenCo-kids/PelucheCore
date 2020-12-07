@@ -32,4 +32,5 @@ namespace APC
         CURL *_curl;
     };
 } // namespace APC
+
 #endif /* !API_HPP_ */
