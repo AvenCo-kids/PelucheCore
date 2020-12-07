@@ -1,8 +1,4 @@
-//
-// Created by quentin on 01/12/2020.
-//
-
-#include "Coordinator.h"
+#include "Coordinator.hpp"
 
 namespace APC {
     void Coordinator::makeChoice() noexcept {}

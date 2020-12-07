@@ -1,15 +1,16 @@
-#ifndef AVENCO_PC_PELUCHE_H_
-#define AVENCO_PC_PELUCHE_H_
+#ifndef AVENCO_PC_PELUCHE_HPP_
+#define AVENCO_PC_PELUCHE_HPP_
 
-#include "Coordinator.h"
+#include "Coordinator.hpp"
 
 namespace APC {
     class IAPI {
     public:
         // Fix all these prototypes
-        virtual void getStory(std::string const name) = 0;
-        virtual void getMP3(std::string const url) = 0;
+        virtual void getStory(const std::string name) = 0;
+        virtual void getMP3(const std::string url) = 0;
         virtual void makeRequest(...) = 0;
     };
 }
 
+/* AVENCO_PC_PELUCHE_HPP_ */

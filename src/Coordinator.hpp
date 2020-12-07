@@ -1,5 +1,5 @@
-#ifndef AVENCO_PC_COORDINATOR_H_
-#define AVENCO_PC_COORDINATOR_H_
+#ifndef AVENCO_PC_COORDINATOR_HPP_
+#define AVENCO_PC_COORDINATOR_HPP_
 
 #include <vector>
 #include <string>
@@ -9,8 +9,8 @@ namespace APC {
     class Coordinator {
     private:
         using Node = struct node_s {
-            char *mp3_; // TODO: find appropriate way to store
-            std::vector<std::string> annotations_; // TODO: find appropriate way to store
+            char *_mp3; // TODO: find appropriate way to store
+            std::vector<std::string> _annotations; // TODO: find appropriate way to store
             struct node_s *children;
         };
     public:
@@ -23,10 +23,10 @@ namespace APC {
         bool saveProgress() const noexcept;
 
     private:
-        Node *storyHead_;
-        Node *curr_;
+        Node *_storyHead;
+        Node *_curr;
         // some sort of inventory
     };
 }
 
-#endif /* AVENCO_PC_COORDINATOR_H_ */
+#endif /* AVENCO_PC_COORDINATOR_HPP_ */
