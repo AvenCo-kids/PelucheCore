@@ -13,6 +13,13 @@
 
 namespace APC {
 
+    static const char *INPUTNAME[] = {
+        "hand_left",
+        "hand_right",
+        "feet_left",
+        "feet_right"
+    };
+
     typedef enum inputName {
         hand_left,
         hand_right,
