@@ -13,6 +13,14 @@
 
 namespace APC {
 
+    typedef enum inputName {
+        hand_left,
+        hand_right,
+        feet_left,
+        feet_right,
+        none
+    } inputName_t;
+
     typedef struct {
         std::string outputName;
         void *params;
