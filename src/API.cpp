@@ -20,7 +20,12 @@ namespace APC
             curl_easy_cleanup(_curl);
     }
 
-    void API::initCurl()
+    CURL *API::getCurl(void) const
+    {
+        return _curl;
+    }
+
+    void API::initCurl(void)
     {
         if (!_curl)
             _curl = curl_easy_init();

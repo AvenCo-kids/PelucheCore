@@ -18,13 +18,14 @@ namespace APC
     public:
         API();
         ~API();
+
         std::pair<std::string, long> launchStory(std::string id, std::string storyID);
         std::pair<std::string, long> getStory(std::string storyID);
         std::pair<std::string, long> listStories(std::string limit, std::string skip);
 
-    protected:
+        CURL *getCurl(void) const;
     private:
-        void initCurl();
+        void initCurl(void);
         std::pair<std::string, long> getRequest(std::string url);
 
     private:
