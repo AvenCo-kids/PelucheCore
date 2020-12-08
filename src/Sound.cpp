@@ -5,7 +5,7 @@
 ** Sound
 */
 
-#include "Sound.hpp"
+#include "../include/Sound.hpp"
 
 namespace APC
 {

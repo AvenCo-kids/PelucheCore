@@ -1,7 +1,6 @@
 #include <criterion/criterion.h>
 #include <curl/curl.h>
-//#include <string>
-#include "../src/API.hpp"
+#include "../include/API.hpp"
 
 Test(api, initialization)
 {

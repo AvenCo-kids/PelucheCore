@@ -13,7 +13,7 @@ namespace APC
         using Node = struct node_s {
             char *_mp3path;
             int _timeCode;
-            std::pair<bool exists, std::string script> _script;
+            std::pair<bool /*exists*/, std::string /*script*/> _script;
             struct node_s *children;
         };
     public:
@@ -27,7 +27,7 @@ namespace APC
         char *_storyName;
         Node *_storyHead;
         Node *_curr;
-        std::map<std::string obj, bool used> _inv;
+        std::map<std::string /*obj*/, bool /*used*/> _inv;
     };
 }
 
